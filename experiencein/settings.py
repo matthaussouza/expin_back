@@ -140,7 +140,7 @@ LOGOUT_REDIRECT_URL=LOGIN_URL
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-    'https://expin-back.herokuapp.com/',
+    'https://expin-back.herokuapp.com',
 )
 
 django_heroku.settings(locals())
