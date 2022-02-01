@@ -53,7 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
+    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsPostCsrfMiddleware'
 ]
 
 ROOT_URLCONF = 'experiencein.urls'
@@ -138,9 +139,6 @@ LOGOUT_URL="/logout/"
 LOGIN_REDIRECT_URL="/"
 LOGOUT_REDIRECT_URL=LOGIN_URL
 
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = (
-    'https://expin-back.herokuapp.com',
-)
+CORS_ORIGIN_ALLOW_ALL = True
 
 django_heroku.settings(locals())
