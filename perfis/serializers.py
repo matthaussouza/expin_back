@@ -9,7 +9,7 @@ class ContatoSerializer(serializers.ModelSerializer):
         fields = ('id', 'nome', 'email')
 
 class PerfilSerializer(serializers.ModelSerializer):
-    senha = serializers.CharField(write_only=True, required=True, style={'input_type':'password'})
+    senha = serializers.CharField(write_only=True, required=True)
     email = serializers.EmailField()
     contatos = ContatoSerializer(required=False, many=True)
 

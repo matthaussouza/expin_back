@@ -136,9 +136,10 @@ LOGIN_REDIRECT_URL="/"
 LOGOUT_REDIRECT_URL=LOGIN_URL
 
 CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ORIGIN_WHITELIST = (
-#     'http://localhost:3000',
-#     'https://exp-inback.herokuapp.com/'
+CORS_ORIGIN_WHITELIST = (
+    'https://expin-front.herokuapp.com'
+)
+
 
 JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'Token',
