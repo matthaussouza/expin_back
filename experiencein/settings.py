@@ -26,7 +26,7 @@ SECRET_KEY = 'b_b7i1vn3wk_&whdh1ey!gyo7zezkwt#z4=0zywr#f*vcan_d7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://expin-back.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -116,10 +116,6 @@ REST_FRAMEWORK = {
     ]
 }
 
-JWT_AUTH = {
-    'JWT_AUTH_HEADER_PREFIX': 'Token',
-}
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -143,7 +139,7 @@ LOGOUT_URL="/logout/"
 LOGIN_REDIRECT_URL="/"
 LOGOUT_REDIRECT_URL=LOGIN_URL
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'https://expin-front.herokuapp.com',
 )
