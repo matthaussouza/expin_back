@@ -116,6 +116,10 @@ REST_FRAMEWORK = {
     ]
 }
 
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'Token',
+}
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
