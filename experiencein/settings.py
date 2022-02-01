@@ -23,7 +23,7 @@ SECRET_KEY = 'b_b7i1vn3wk_&whdh1ey!gyo7zezkwt#z4=0zywr#f*vcan_d7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://expin-front.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -129,7 +129,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 LOGIN_URL="/login/"
 LOGOUT_URL="/logout/"
 LOGIN_REDIRECT_URL="/"
