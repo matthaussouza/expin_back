@@ -15,7 +15,7 @@ class PerfilSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Perfil
-        fields = ('id', 'nome', 'telefone', 'email', 'nome_empresa', 'senha', 'contatos')
+        fields = ('id', 'nome', 'email', 'nome_empresa', 'senha', 'contatos')
         read_only_fields = ('id',)
 
     def create(self, validated_data):
