@@ -23,7 +23,7 @@ SECRET_KEY = 'b_b7i1vn3wk_&whdh1ey!gyo7zezkwt#z4=0zywr#f*vcan_d7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://exp-inback.herokuapp.com']
+ALLOWED_HOSTS = ['https://expin-front.herokuapp.com']
 
 
 # Application definition
