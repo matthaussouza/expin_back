@@ -140,5 +140,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 #     'http://localhost:3000',
 #     'https://exp-inback.herokuapp.com/'
 
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'Token',
+}
 
 django_heroku.settings(locals())
